@@ -1,0 +1,16 @@
+name: Schedule Shared Actions
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+
+jobs:
+  opslevel:
+    name: OpsLevel
+    uses: getoutreach/actions/.github/workflows/opslevel.yaml@artemchernyak-outreach/feat/opslevel-action
+    runs-on: ubuntu-latest
+    secrets:
+      OUTREACH_DOCKER_JSON: ${{ secrets.OUTREACH_DOCKER_JSON }}
+      SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+      OPSLEVEL_TOKEN: ${{ secrets.OPSLEVEL_TOKEN }}
+    with:
+      image_tag: development
