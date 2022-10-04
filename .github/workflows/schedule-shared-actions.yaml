@@ -1,7 +1,7 @@
 name: Schedule Shared Actions
 on:
   schedule:
-    - cron: "0 0 1 * *"
+    - cron: "5 * * * *"
 
 jobs:
   opslevel:
