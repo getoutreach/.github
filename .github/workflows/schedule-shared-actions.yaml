@@ -13,5 +13,4 @@ jobs:
       SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
       OPSLEVEL_TOKEN: ${{ secrets.OPSLEVEL_TOKEN }}
     with:
-      branch: artemchernyak-outreach/feat/opslevel-action
       image_tag: development
