@@ -13,4 +13,4 @@ jobs:
       SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
       OPSLEVEL_TOKEN: ${{ secrets.OPSLEVEL_TOKEN }}
     with:
-      image_tag: development
+      image_tag: latest
