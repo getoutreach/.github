@@ -7,7 +7,7 @@ on:
 jobs:
   opslevel:
     name: OpsLevel
-    uses: getoutreach/actions/.github/workflows/opslevel.yaml@main
+    uses: getoutreach/outreach-actions/.github/workflows/opslevel.yaml@main
     secrets:
       OUTREACH_DOCKER_JSON: ${{ secrets.OUTREACH_DOCKER_JSON }}
       SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
